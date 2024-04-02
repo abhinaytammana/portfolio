@@ -8,7 +8,7 @@ function BlogPage(props) {
       {value =>{
         const {blogs}=value;
         const id=props.match.params.id;
-        const blog =blogs.filter((blog)=>blog.id==id)[0];
+        const blog =blogs.filter((blog)=>blog.id===id)[0];
         const {imageUrl,title,body}=blog;
         return (
           <div className="container py-5 my-5 markdown ">
